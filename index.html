@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .heading {
+      color: white;
+      font-weight: 900;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      position: relative;
+      background: black;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #ff512f, #dd2476);
+      background-size: 500% 500%;
+      animation: change 10s ease-in-out infinite;
+    }
+
+    @keyframes change {
+      0% {
+        background-position: 0 50%;
+      }
+      50% {
+        background-position: 108% 50%;
+      }
+      100% {
+        background-position: 0 50%;
+      }
+    }
+  </style>
+  <body>
+    <section class="section">
+      <h3 class="heading">Animated background</h3>
+    </section>
+  </body>
+</html>
